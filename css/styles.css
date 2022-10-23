@@ -13,9 +13,12 @@
     --text-color: #757575;
     --accent-color: #2196F3;
     --white-color: #FFFFFF;
+    --black-color: #000000;
     --background-color: #FFFFFF;
     --background-color-secondary: #F5F4FA;
+    --background-color-third: #2F303A;
     --background-color-accent: #2196F3;
+    --background-color-aktive: #188CE8;
 }
 
 body {
@@ -40,18 +43,13 @@ ul {
 
 .logo {
  font-family: Raleway;
- font-style: normal;
  font-weight: 700;
  font-size: 26px;
  line-height: 1.19;
  letter-spacing: 0.03em;
- color: #000000;
+ color: var(--black-color);
 } 
- 
-.logo:hover, logo:focus {
-color: var(--accent-color);
-}
- 
+  
 .accent {
  color: var(--accent-color);
 }
@@ -60,7 +58,6 @@ color: var(--accent-color);
 /* site-nav */
 
 .site-nav .link {
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -86,7 +83,6 @@ color: var(--accent-color);
 }
 
 .auth-nav .link {
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -100,11 +96,10 @@ color: var(--accent-color);
 /* bg */
 
 .section-bg {
- background-color:#2F303A;
+ background-color:var(--background-color-third);
 }
 
 .section-bg-title {
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -116,7 +111,6 @@ color: var(--accent-color);
 
 .section-bg-button {
     font-family: inherit;
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -124,14 +118,17 @@ color: var(--accent-color);
     cursor: pointer;
     color: var(--white-color);
     background-color: var(--background-color-accent);
+    border: none;
     
 }
 
-.shadow:hover,
-.shadow:focus {
-    background-color: var(--background-color-accent);
+.section-bg-button:hover,
+.section-bg-button:focus {
+    background-color: var(--background-color-aktive);
     text-shadow: 0px 4px 4px #000000;
+       
 }
+
 
 
 /*  Інформація про сферу діяльності*/
@@ -201,12 +198,11 @@ color: var(--accent-color);
 }
 /* footer */
 .footer {
- background-color: #2F303A;
+ background-color: var(--background-color-third);
 }
 
 .footer .footer-logo {
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -214,13 +210,10 @@ color: var(--accent-color);
     color: var(--white-color);
 }
 
-.footer .footer-logo:hover,
-.footer .footer-logo:focus {
-    color: var(--accent-color);
-}
- .footer-adress {
+
+.footer-adress {
     font-style: normal;
- }
+}
 
 .footer .footer-text {
     font-size: 14px;
@@ -257,7 +250,6 @@ color: var(--accent-color);
 
 .portfolio-filter .button {
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;    
@@ -282,11 +274,13 @@ color: var(--accent-color);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-}
+    color: var(--primary-text-color);
+    }
 
 .project-text {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--text-color);
+    
 }
